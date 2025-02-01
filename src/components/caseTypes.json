@@ -1,0 +1,12 @@
+{
+  "Civil": ["Civil Appeal", "Civil Petition", "Civil Revision"],
+  "Criminal": ["Criminal Appeal", "Criminal Petition", "Criminal Revision"],
+  "Family": ["Divorce Case", "Child Custody", "Alimony Case"],
+  "Labor": ["Labor Dispute", "Wage Claim", "Worker's Compensation"],
+  "Tax": ["Income Tax Appeal", "Sales Tax Dispute", "Customs Appeal"],
+  "Corporate": [
+    "Merger and Acquisition",
+    "Corporate Litigation",
+    "Shareholder Dispute"
+  ]
+}

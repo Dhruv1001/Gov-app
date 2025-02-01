@@ -1,0 +1,182 @@
+/* Flex layout for responsive navbar */
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-direction: column;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+}
+
+/* General Navbar Styling */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/* Styling for Services dropdown */
+.navbar-nav .dropdown-toggle {
+    padding: 11px 1px;
+    color: #333 !important;
+    /* Same color as other nav items */
+    background: transparent !important;
+    /* Ensure no background color */
+    border: none;
+}
+
+.navbar-nav .dropdown-toggle:hover {
+    color: #000 !important;
+    background: transparent;
+    /* Remove the blue background */
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+    /* Remove shadow if not present in other nav items */
+}
+
+.navbar-nav .dropdown-item {
+    color: #333;
+    padding: 10px 20px;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #f8f9fa;
+    /* Subtle background on hover */
+    color: #000;
+}
+
+/* Dropdown Styling */
+.dropdown-toggle::after {
+    margin-left: 5px !important;
+}
+
+.custom-dropdown {
+    background-color: #a38454;
+    /* Main dropdown background */
+    border: none;
+    padding: 0;
+    min-width: 200px;
+}
+
+.custom-dropdown .dropdown-item {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /* Light separators */
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #a71f2a;
+    /* Hover color */
+    color: #fff;
+}
+
+/* Submenu styling */
+.navbar-nav .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+.navbar-nav .has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu .dropdown-item {
+    white-space: nowrap;
+}
+
+/* Active state for dropdowns */
+.navbar-nav .active {
+    color: #000;
+}
+
+/* For small screens */
+@media (max-width: 767px) {
+
+    .navbar-nav .nav-link,
+    .navbar-nav .dropdown-toggle {
+        padding: 10px 15px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        background-color: #f8f9fa;
+        box-shadow: none;
+    }
+
+    .navbar-nav .submenu {
+        position: static;
+        margin: 0;
+    }
+}
+
+/* Nested submenu for right-side expansion */
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu .submenu {
+    display: none !important;
+    position: absolute;
+    top: 0;
+    left: 100% !important;
+    /* Push the submenu to the right */
+    min-width: 200px;
+    background-color: #b52730;
+    /* Dark red background for submenu */
+    border: none;
+    z-index: 1000;
+    /* Ensure the submenu is above other elements */
+}
+
+.has-submenu:hover .submenu {
+    display: block !important;
+    /* Show submenu when hovering */
+}
+
+.submenu .dropdown-item {
+    padding: 10px 20px;
+    background-color: #b52730;
+    /* Same dark red background for items */
+    color: #fff;
+}
+
+.submenu .dropdown-item:hover {
+    background-color: #a71f2a;
+    /* Hover effect for submenu items */
+    color: #fff;
+}
+
+.has-submenu:hover .submenu,
+.has-submenu .submenu:hover {
+    display: block;
+    /* Keep submenu open when hovering over it */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+}

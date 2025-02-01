@@ -1,0 +1,51 @@
+import React, { createContext, useState, useEffect } from 'react';
+import Web3 from 'web3';
+import { create } from 'ipfs-http-client';
+import CONTRACT_ABI from '../contracts/MyContract.json'; // Replace with your actual ABI file path
+
+export const FileContext = createContext();
+
+export const FileProvider = ({ children }) => {
+  const [files, setFiles] = useState([]);
+  const [web3, setWeb3] = useState(null);
+  const [contract, setContract] = useState(null);
+  const [accounts, setAccounts] = useState([]);
+
+  const CONTRACT_ADDRESS = '0x91263b573922bc13b89Da72E7adCeAa46ed9eb41';
+
+  useEffect(() => {
+    const initWeb3 = async () => {
+      try {
+        const web3Instance = new Web3('http://127.0.0.1:7545');
+        setWeb3(web3Instance);
+
+        const accounts = await web3Instance.eth.getAccounts();
+        setAccounts(accounts);
+
+        const contractInstance = new web3Instance.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
+        setContract(contractInstance);
+
+        fetchFilesFromBlockchain(contractInstance);
+      } catch (error) {
+        console.error('Error initializing Web3:', error);
+      }
+    };
+
+    initWeb3();
+  }, []);
+
+  const fetchFilesFromBlockchain = async (contractInstance) => {
+    try {
+      const files = await contractInstance.methods.getAllFiles().call();
+      setFiles(files);
+    } catch (error) {
+      console.error('Error fetching files from blockchain:', error);
+    }
+  };
+  
+  return (
+    <FileContext.Provider value={{ files, setFiles, contract, accounts }}>
+      {children}
+    </FileContext.Provider>
+  );
+};

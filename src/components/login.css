@@ -1,0 +1,77 @@
+/* src/components/Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh; /* Full viewport height */
+    background-color: #f0f2f5; /* Light grey background */
+  }
+  
+  .login-selection {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+  
+  .login-box {
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    cursor: pointer;
+    text-align: center;
+    width: 270px;
+    margin: 0 10px;
+  }
+  
+  .login-box h2 {
+    /* margin-bottom: 20px; */
+    font-size: 23px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 5px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-box label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .login-box input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .login-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-box p {
+    color: red;
+    text-align: center;
+  }
+  

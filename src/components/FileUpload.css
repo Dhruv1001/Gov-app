@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.file-upload-container {
+  margin: 20px;
+}
+
+.file-upload-container h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+}
+.file-upload-container h1,
+.file-upload-container h2,
+.file-upload-container h3 {
+  text-align: center;
+}
+
+.file-upload-container p {
+  text-align: center;
+}
+
+.file-upload-container input,
+.file-upload-container select {
+  margin: 5px;
+}
+
+.file-upload-container .file-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.file-upload-container .file-table th,
+.file-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.file-upload-container .file-table th {
+  background-color: #4b6eec;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.file-upload-container .file-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.file-upload-container .download-button,
+.c-btn,
+.share-section button {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #4177f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-upload-container  .download-button:hover,
+.c-btn:hover,
+.share-section button:hover {
+  background-color: #365fbe;
+}
+
+.file-upload-container .share-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.file-upload-container .share-section select {
+  margin: 5px;
+  padding: 5px;
+}

@@ -1,0 +1,569 @@
+{
+  "Andhra Pradesh": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": [
+        "HIGH COURT OF A.P. AT HYDERABAD HCAP",
+        "HIGH COURT OF JUDICATURE AT HYDERABAD FOR THE STATE OF TELANGANA AND THE STATE OF ANDHRA PRADESH HCTAP",
+        "HIGH COURT OF ANDHRA PRADESH AT AMRAVATI"
+      ],
+      "District Court": [
+        "ANAKAPULLI",
+        "ANANTAPURI",
+        "ANNAMAYYA",
+        "BAPATLA",
+        "CHITTOR",
+        "CUDDAPA"
+      ],
+      "State Court": [
+        "CAT AT HYDERABAD CATHY",
+        "ANDHRA PRADESH ADMINISTRATIVE TRIBUNAL AT HYDERABAD SATAP",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT HYDERABAD CATAP",
+        "SALES TAX APPELLATE TRIBUNAL, A.P. STTAP",
+        "ARMED FORCES TRIBUNAL AFT"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Arunachal Pradesh": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": ["HIGH COURT OF ARUNACHAL PRADESH AT ITANAGAR"],
+      "District Court": ["ITANAGAR", "ZIRO", "PASIGHAT"],
+      "State Court": [
+        "ARUNACHAL PRADESH ADMINISTRATIVE TRIBUNAL AT ITANAGAR",
+        "SALES TAX APPELLATE TRIBUNAL, ARUNACHAL PRADESH"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Assam": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": [
+        "GAUHATI HIGH COURT AT GUWAHATI",
+        "GAUHATI HIGH COURT BENCH AT ITANAGAR",
+        "GAUHATI HIGH COURT BENCH AT KOHIMA"
+      ],
+      "District Court": ["DIBRUGARH", "JORHAT", "TEZPUR", "GUWAHATI"],
+      "State Court": [
+        "ASSAM ADMINISTRATIVE TRIBUNAL",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT GUWAHATI"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Bihar": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": ["PATNA HIGH COURT"],
+      "District Court": ["BHAGALPUR", "MUZAFFARPUR", "GAYA", "PATNA"],
+      "State Court": [
+        "BIHAR ADMINISTRATIVE TRIBUNAL",
+        "SALES TAX APPELLATE TRIBUNAL, BIHAR",
+        "ARMED FORCES TRIBUNAL AT PATNA"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Chhattisgarh": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": ["CHHATTISGARH HIGH COURT AT BILASPUR"],
+      "District Court": ["RAIPUR", "BILASPUR", "DURG", "BASTAR"],
+      "State Court": [
+        "CHHATTISGARH ADMINISTRATIVE TRIBUNAL",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT RAIPUR"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Goa": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": ["BOMBAY HIGH COURT AT GOA"],
+      "District Court": ["PANAJI", "MARGAO", "VASCO DA GAMA"],
+      "State Court": [
+        "GOA ADMINISTRATIVE TRIBUNAL",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT PANAJI"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Gujarat": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": ["GUJARAT HIGH COURT AT AHMEDABAD"],
+      "District Court": ["SURAT", "RAJKOT", "VADODARA", "BHAVNAGAR"],
+      "State Court": [
+        "GUJARAT ADMINISTRATIVE TRIBUNAL",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT AHMEDABAD"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Haryana": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": ["PUNJAB AND HARYANA HIGH COURT AT CHANDIGARH"],
+      "District Court": ["GURGAON", "FARIDABAD", "PANCHKULA", "AMBALA"],
+      "State Court": [
+        "HARYANA ADMINISTRATIVE TRIBUNAL",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT CHANDIGARH"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Himachal Pradesh": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": ["HIMACHAL PRADESH HIGH COURT AT SHIMLA"],
+      "District Court": ["KANGRA", "MANDI", "KULLU", "SOLAN"],
+      "State Court": [
+        "HIMACHAL PRADESH ADMINISTRATIVE TRIBUNAL",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT SHIMLA"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Jharkhand": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": ["JHARKHAND HIGH COURT AT RANCHI"],
+      "District Court": ["DHANBAD", "BOKARO", "JAMSHEDPUR", "HAZARIBAGH"],
+      "State Court": [
+        "JHARKHAND ADMINISTRATIVE TRIBUNAL",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT RANCHI"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Karnataka": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": [
+        "KARNATAKA HIGH COURT AT BANGALORE",
+        "KARNATAKA HIGH COURT BENCH AT HUBLI"
+      ],
+      "District Court": ["MYSORE", "MANGALORE", "BELGAUM", "SHIMOGA"],
+      "State Court": [
+        "KARNATAKA ADMINISTRATIVE TRIBUNAL",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT BANGALORE"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  },
+  "Kerala": {
+    "courts": ["High Court", "District Court", "State Court"],
+    "benches": {
+      "High Court": ["KERALA HIGH COURT AT KOCHI"],
+      "District Court": [
+        "THIRUVANANTHAPURAM",
+        "KOZHIKODE",
+        "ERNAKULAM",
+        "KOLLAM"
+      ],
+      "State Court": [
+        "KERALA ADMINISTRATIVE TRIBUNAL",
+        "CENTRAL ADMINISTRATIVE TRIBUNAL AT KOCHI"
+      ]
+    },
+    "years": [
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2018",
+      "2017",
+      "2016",
+      "2015",
+      "2014",
+      "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2004",
+      "2003",
+      "2002",
+      "2001",
+      "2000"
+    ],
+    "actTypes": [
+      "Governors (Emoluments, Allowances and Privileges) Act",
+      "Forest (Conservation) Rules",
+      "IEPF Auhority (Recruitment Salary and Other terms and conditions of service of Officers and other employees) Rules",
+      "Indian Easements Act",
+      "Part C States Miscellaneous Laws (Repealing) Act"
+    ]
+  }
+}
