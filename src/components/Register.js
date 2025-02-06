@@ -45,11 +45,11 @@ function Register() {
 
       // Check if login is successful (adjust according to your API response)
       if (response.data) {
-        alert('Login successful!');
+        alert('Registration successful!');
         // Handle successful login (e.g., redirect to another page)
       }
     } catch (err) {
-      setErrorMessage('Login failed: ' + err.message);
+      setErrorMessage('Registration failed: ' + err.message);
     }
   };
 
