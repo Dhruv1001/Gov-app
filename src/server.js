@@ -4,6 +4,7 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');  // For password hashing
 const app = express();
 const objectId = new mongoose.Types.ObjectId();
+const jwt = require('jsonwebtoken');
 
 
 // Middleware
@@ -21,7 +22,7 @@ mongoose.connect('mongodb://localhost:27017/SupremeCourt', {
 // Define the schema for the "users" collection
 const clientSchema = new mongoose.Schema({
   fullname: { type: String, required: true },
-  username: { type: String, required: true },
+  username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
 });
 
@@ -43,12 +44,15 @@ app.post('/api/log', async (req, res) => {
     }
 
     // Compare the password with the stored hash
-    const isMatch = (password == client.password);
+    const isMatch = await bcrypt.compare(password, client.password);
+    // const isMatch = (password == client.password);
     
     
     if (!isMatch) {
       return res.status(401).json({ message: 'Invalid username or password' });
     }
+   
+    const token = jwt.sign({ id: client._id, username: client.username }, SECRET_KEY, { expiresIn: "1h" });
 
     // Respond with a success message or user data
     res.status(200).json({ message: 'Login successful', client });
@@ -63,20 +67,20 @@ app.post('/api/log', async (req, res) => {
 // Register route (for creating new clients)
 app.post('/api/clients', async (req, res) => {
   const { fullname, username, password } = req.body;  // Get data from the request body
-
+  
   try {
     // Check if the username already exists
     const existingClient = await Client.findOne({ username });
     if (existingClient) {
-      return res.status(400).json({ message: 'Username already exists' });
+      return res.status(400).send({ message: 'Username already exists' });
     }
+    
+    const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Hash the password before saving it
-    // const hashedPassword = await bcrypt.hash(password, 10);
-
-    const newClient = new Client({ fullname, username, password: password });
+    const newClient = new Client({ fullname, username, password: hashedPassword });
     await newClient.save();  // Save the new user to MongoDB
-    res.status(201).json(newClient);  // Respond with the new user
+    res.status(201).json(newClient);
+      // Respond with the new user
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Error adding user' });

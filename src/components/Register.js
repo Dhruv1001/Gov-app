@@ -49,7 +49,7 @@ function Register() {
         // Handle successful login (e.g., redirect to another page)
       }
     } catch (err) {
-      setErrorMessage('Registration failed: ' + err.message);
+      setErrorMessage('Registration failed');
     }
   };
 
