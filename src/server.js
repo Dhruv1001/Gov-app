@@ -5,6 +5,8 @@ const bcrypt = require('bcryptjs');  // For password hashing
 const app = express();
 const objectId = new mongoose.Types.ObjectId();
 const jwt = require('jsonwebtoken');
+require('dotenv').config({ path: './.env' });
+console.log("JWT Secret:", process.env.JWT_SECRET); 
 
 
 // Middleware
@@ -29,6 +31,22 @@ const clientSchema = new mongoose.Schema({
 // Define the model for the collection
 const Client = mongoose.model('clients', clientSchema);
 
+// Authentication Middleware
+const authMiddleware = (req, res, next) => {
+  const token = req.header("Authorization");
+  if (!token) {
+    return res.status(401).json({ message: "Access denied. No token provided." });
+  }
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded;
+    next();
+  } catch (err) {
+    res.status(400).json({ message: "Invalid token." });
+  }
+};
+
+
 // Login route
 app.post('/api/log', async (req, res) => {
   const { username, password } = req.body;
@@ -52,10 +70,11 @@ app.post('/api/log', async (req, res) => {
       return res.status(401).json({ message: 'Invalid username or password' });
     }
    
-    const token = jwt.sign({ id: client._id, username: client.username }, SECRET_KEY, { expiresIn: "1h" });
+    const token = jwt.sign({ username: client.username }, process.env.JWT_SECRET, { expiresIn: "1h" });
+
 
     // Respond with a success message or user data
-    res.status(200).json({ message: 'Login successful', client });
+    res.status(200).json({ message: 'Login successful', client});
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Server error' });
@@ -85,6 +104,11 @@ app.post('/api/clients', async (req, res) => {
     console.error(err);
     res.status(500).json({ message: 'Error adding user' });
   }
+});
+
+// Protected Dashboard Route
+app.get('/api/dashboard', authMiddleware, (req, res) => {
+  res.status(200).json({ message: "Welcome to the dashboard", user: req.user });
 });
 
 // Start the server
