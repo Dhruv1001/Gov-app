@@ -6,8 +6,9 @@ import Home from "./components/Home";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Upload from "./components/upload";
-import LawyerDashboard from "./components/LawyerDashboard";
-import ClientDashboard from "./components/ClientDashboard";
+import LawyerDashB from "./components/LawyerDashB";
+import ClientDashB from "./components/ClientDashB";
+// import JudgeDashBoard from "./components/JudgeDashB";
 import Services from "./components/Services";
 import Doc from "./components/Doc";
 import Casedoc from "./components/Casedoc";
@@ -125,8 +126,8 @@ const Navigation = () => {
         <Route path="/Upload" element={<Upload />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Services" element={<Services />} />
-        <Route path="/lawyerdashboard" element={<LawyerDashboard />} />
-        <Route path="/clientdashboard" element={<ClientDashboard />} />
+        {/* <Route path="/LawyerDashB" element={<LawyerDashB />} /> */}
+        <Route path="/ClientDashB" element={<ClientDashB />} />
         <Route path="/Doc" element={<Doc />} />
         <Route path="/Casedoc" element={<Casedoc />} />
         <Route path="/Casenum" element={<Casenum />} />

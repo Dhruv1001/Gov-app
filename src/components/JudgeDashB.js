@@ -4,7 +4,7 @@ import './dashboard.css';
 import axios from 'axios';
 
 
-const ClientDashB = () => {
+const JudgeDashB = () => {
   const [user, setUser] = useState(null);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -30,19 +30,17 @@ const ClientDashB = () => {
   }, [navigate]);
  
   const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('role');  // Remove token
+    localStorage.removeItem('token'); 
+    localStorage.removeItem('role'); // Remove token
     navigate('/login');  // Redirect to login page
   };
-// app.post('api/sendus', async (req, res) => {
-//   const {user} = req.body;
-// });
+
 
   if (error) return 
   <div>{error}</div>;
 
   return (
-    <div className='welc'>
+    <div className='welcc'>
       <h1>Welcome to your Dashboard</h1>
       {user && <p>Welcome, {user.username}!</p>}
       <button onClick={handleLogout}>Logout</button>
@@ -50,4 +48,4 @@ const ClientDashB = () => {
   );
 };
 
-export default ClientDashB;
+export default JudgeDashB;
