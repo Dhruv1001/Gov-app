@@ -5,10 +5,12 @@ import { Navbar, Nav, Dropdown } from "react-bootstrap";
 import Home from "./components/Home";
 import Register from "./components/Register";
 import Login from "./components/Login";
+import Admin from "./components/Admin";
 import Upload from "./components/upload";
+import AdminDashB from "./components/AdminDashB";
 import LawyerDashB from "./components/LawyerDashB";
 import ClientDashB from "./components/ClientDashB";
-// import JudgeDashBoard from "./components/JudgeDashB";
+import JudgeDashB from "./components/JudgeDashB";
 import Services from "./components/Services";
 import Doc from "./components/Doc";
 import Casedoc from "./components/Casedoc";
@@ -115,6 +117,9 @@ const Navigation = () => {
             <Nav.Link href="#eservices">e-Services</Nav.Link>
             <Nav.Link href="#filings">Court Filings</Nav.Link>
             <Nav.Link href="#about">About Us</Nav.Link>
+            <Nav.Link as={Link} to={"/Admin"}>
+              Admin 👤
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -125,9 +130,12 @@ const Navigation = () => {
         <Route path="/Register" element={<Register />} />
         <Route path="/Upload" element={<Upload />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Admin" element={<Admin />} />
         <Route path="/Services" element={<Services />} />
-        {/* <Route path="/LawyerDashB" element={<LawyerDashB />} /> */}
+        <Route path="/AdminDashB" element={<AdminDashB />} />
+        <Route path="/LawyerDashB" element={<LawyerDashB />} />
         <Route path="/ClientDashB" element={<ClientDashB />} />
+        <Route path="/JudgeDashB" element={<JudgeDashB />} />
         <Route path="/Doc" element={<Doc />} />
         <Route path="/Casedoc" element={<Casedoc />} />
         <Route path="/Casenum" element={<Casenum />} />

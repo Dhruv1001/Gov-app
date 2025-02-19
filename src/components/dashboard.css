@@ -2,5 +2,27 @@
 
     background-color: 0;
     width: 100px;
-    height: 100px;
+    height: 200px;
+}
+
+.head{
+    padding: 20px;
+    width: 1000px;
+    height: 500px;
+}
+
+.MainDash{
+    padding: 20px;
+    
+}
+
+.JNav{
+    display:flex;
+    flex-direction: column;
+}
+
+.AdDash{
+    height: 500px;
+    width: 500px;
+    padding: 10px;
 }

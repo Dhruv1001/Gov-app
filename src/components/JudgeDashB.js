@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Navbar, Nav, Dropdown } from "react-bootstrap";
+import { Route, Link, Routes, BrowserRouter } from "react-router-dom";
 import './dashboard.css';
 import axios from 'axios';
 
@@ -40,11 +42,16 @@ const JudgeDashB = () => {
   <div>{error}</div>;
 
   return (
-    <div className='welcc'>
+    <div className='head'>
       <h1>Welcome to your Dashboard</h1>
+      <div className='MainDash'>
+      {/* <button onClick={NewCase}>Add New Case +</button> */}
+      
+    </div>
       {user && <p>Welcome, {user.username}!</p>}
       <button onClick={handleLogout}>Logout</button>
     </div>
+    
   );
 };
 
